@@ -2,13 +2,6 @@
 
 # Description: A program to group strings into anagram families
 
-# Student Name: ayesha faheem
-
-# Student UT EID: af35545
-
-# Course Name: CS 313E
-
-# Unique Number: 52020
 
 # Output: True or False
 def are_anagrams(str1, str2):
