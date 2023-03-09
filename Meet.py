@@ -2,13 +2,6 @@
 
 #  Description: Determine earlist meet time interval for two people
 
-#  Student Name:
-
-#  Student UT EID:
-
-#  Course Name: CS 313E
-
-#  Unique Number: 86610
 
 import sys
 
