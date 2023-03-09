@@ -3,13 +3,7 @@
 #  Description: Determines if a square 2d list of 1s and 0s has some "symmetry" where the matrix is
 #               the same as its transpose
 
-#  Student Name: ayesha faheem  
 
-#  Student UT EID: af35545
-
-#  Course Name: CS 313E
-
-#  Unique Number: 52020
 
 # Prints your 2d list
 # Can be used for debugging purposes
