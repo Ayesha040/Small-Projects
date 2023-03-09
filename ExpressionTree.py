@@ -1,23 +1,6 @@
 #  File: ExpressionTree.py
 
 #  Description:
-
-#  Student Name:
-
-#  Student UT EID:
-
-#  Partner Name:
-
-#  Partner UT EID:
-
-#  Course Name: CS 313E
-
-#  Unique Number: 
-
-#  Date Created:
-
-#  Date Last Modified:
-
 import sys
 
 operators = ['+', '-', '*', '/', '//', '%', '**']
@@ -47,24 +30,106 @@ class Node (object):
 class Tree (object):
     def __init__ (self):
         self.root = None
+
+    # def print_tree(self):
+    #     self._print_tree_helper(self.root)
+
+    # def _print_tree_helper(self, node, indent=0):
+    #     if node is not None:
+    #         # print right subtree
+    #         self._print_tree_helper(node.rChild, indent + 4)
+
+    #         # print node
+    #         print(' ' * indent, node.data)
+
+    #         # print left subtree
+    #         self._print_tree_helper(node.lChild, indent + 4)
     
-    # this function takes in the input string expr and 
-    # creates the expression tree
+    
     def create_tree (self, expr):
-    
+        tokens = expr.split()
+        stack = Stack()
+        current_node = Node()
+        self.root = current_node
+        
+        for token in tokens:
+            if token == "(":
+                new_node = Node()
+                current_node.lChild = new_node
+                stack.push(current_node)
+                current_node = new_node
+            elif token == ")":
+                if not stack.is_empty():
+                    current_node = stack.pop()
+            elif token in operators:
+                current_node.data = token
+                new_node = Node()
+                current_node.rChild = new_node
+                stack.push(current_node)
+                current_node = new_node
+            else:
+                current_node.data = token
+                parent = stack.pop()
+                current_node = parent
+                if current_node is not None:
+                    current_node.rChild = parent.rChild
+
+        
     # this function should evaluate the tree's expression
     # returns the value of the expression after being calculated
     def evaluate (self, aNode):
+        # if empty return zero
+        if aNode is None:
+            return 0
+        
+        #if the root is the only node then return its data
+        if aNode.lChild is None and aNode.rChild is None:
+            return float(aNode.data)
+        
+        # using recursion to evaluate 
+        left = self.evaluate(aNode.lChild)
+        right = self.evaluate(aNode.rChild)
+
+        # doing the math
+        if aNode.data == '+':
+            return left + right
+        elif aNode.data == '-':
+            return left - right
+        elif aNode.data == '*':
+            return left * right
+        elif aNode.data == '/':
+            return left / right
+        elif aNode.data == '//':
+            return left // right
+        elif aNode.data == '%':
+            return left % right
+        elif aNode.data == '**':
+            return left ** right
+        else:
+            return 0
     
-    # this function should generate the preorder notation of 
+# this function should generate the preorder notation of 
     # the tree's expression
     # returns a string of the expression written in preorder notation
-    def pre_order (self, aNode):
+    def pre_order(self, aNode):
+        if aNode is None:
+            return ''
+        else:
+            left = self.pre_order(aNode.lChild)
+            right = self.pre_order(aNode.rChild)
+            return str(aNode.data) + ' ' + left + right
 
     # this function should generate the postorder notation of 
     # the tree's expression
     # returns a string of the expression written in postorder notation
-    def post_order (self, aNode):
+    def post_order(self, aNode):
+        if aNode is None:
+            return ''
+        else:
+            left = self.post_order(aNode.lChild)
+            right = self.post_order(aNode.rChild)
+            return left + right + str(aNode.data) + ' '
+
 
 # you should NOT need to touch main, everything should be handled for you
 def main():
@@ -74,6 +139,7 @@ def main():
  
     tree = Tree()
     tree.create_tree(expr)
+    
     
     # evaluate the expression and print the result
     print(expr, "=", str(tree.evaluate(tree.root)))
