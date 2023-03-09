@@ -2,13 +2,6 @@
 
 # Description: A basic 2D Triangle class
 
-# Student Name:
-
-# Student UT EID:
-
-# Course Name: CS 313E
-
-# Unique Number: 86610
 
 import sys
 import math
