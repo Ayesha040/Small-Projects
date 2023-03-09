@@ -5,13 +5,6 @@
 #               Tim will spend in a given day, returns a list of integers representing how many different shops
 #               Tim can buy a cup of black tea.
 
-#  Student Name: ayesha faheem
-
-#  Student UT EID: af35545
-
-#  Course Name: CS 313E
-
-#  Unique Number: 52020
 
 import sys
 
