@@ -2,13 +2,6 @@
 
 #  Description: A basic interval class.
 
-#  Student Name: ayesha faheem
-
-#  Student UT EID: af35545
-
-#  Course Name: CS 313E
-
-#  Unique Number: 52020
 
 import sys
 
