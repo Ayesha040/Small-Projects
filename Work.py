@@ -2,21 +2,6 @@
 
 #  Description: Using binary and linear search with series sum to figure out the minimum allowable value of v for a given productivity factor that will allow him to write at least n lines of code before he falls asleep.
 
-#  Student Name: Emily Mercado
-
-#  Student UT EID: EAM5432
-
-#  Course Name: CS 313E
-
-#  Partner Name: Ayesha Faheem
-
-#  Partner EID: af33545
-
-#  Unique Number: 52020
-
-#  Date Created: 2/26/2023
-
-#  Date Last Modified: 2/26/2023
 
 
 import sys
