@@ -3,21 +3,6 @@
 #  Description: Create a circular linked list to eliminate a group of siliders one at a time. 
 #  start the eliminating at agiven start and remove at the nth number from that start until there is one soldier left 
 
-#  Student Name: Emily Mercado
-
-#  Student UT EID: EAM5432
-
-#  Course Name: CS 313E
-
-#  Partner Name: Ayesha Faheem
-
-#  Partner EID: af33545
-
-#  Unique Number: 52020
-
-#  Date Created: 3/6/2023
-
-#  Date Last Modified: 3/6/2023
 
 import sys
 
