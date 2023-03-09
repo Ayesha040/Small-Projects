@@ -1,13 +1,5 @@
 #  File: employee.py
 #  Description:
-#  Student Name: Ayesha Faheem
-#  Student UT EID: af33545
-#  Partner Name: Emily Mercado
-#  Partner UT EID: eam5432
-#  Course Name: CS 313E
-#  Unique Number: 52020
-#  Date Created: Feb 9 2023
-#  Date Last Modified: Feb 10 2023
 
 import sys
 
