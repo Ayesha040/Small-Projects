@@ -3,13 +3,6 @@
 #  Description: Determine if there exists at least one of two elements, x and y, 
 #	in the list, the product of two elements, (x * y), is also a member of the list and False otherwise.
 
-#  Student Name: 
-
-#  Student UT EID: 
-
-#  Course Name: CS 313E
-
-#  Unique Number: 86610
 
 import sys
 
