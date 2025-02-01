@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BAA680112AD5E07D00871443 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA680102AD5E07D00871443 /* AppDelegate.swift */; };
+		BAA680132AD5E07D00871443 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA680122AD5E07D00871443 /* SceneDelegate.swift */; };
+		BAA680152AD5E07D00871443 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA680142AD5E07D00871443 /* ViewController.swift */; };
+		BAA680182AD5E07D00871443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA680162AD5E07D00871443 /* Main.storyboard */; };
+		BAA6801B2AD5E07D00871443 /* FaheemAyesha_HW5.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BAA680192AD5E07D00871443 /* FaheemAyesha_HW5.xcdatamodeld */; };
+		BAA6801D2AD5E07F00871443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA6801C2AD5E07F00871443 /* Assets.xcassets */; };
+		BAA680202AD5E07F00871443 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA6801E2AD5E07F00871443 /* LaunchScreen.storyboard */; };
+		BAA680282AD5E0EF00871443 /* pizzaOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA680272AD5E0EF00871443 /* pizzaOrderVC.swift */; };
+		BAF5E5B82AE218FD00585766 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF5E5B72AE218FD00585766 /* LoginViewController.swift */; };
+		BAF5E5BA2AE2203700585766 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAF5E5B92AE2203700585766 /* GoogleService-Info.plist */; };
+		BAF5E5BD2AE2220400585766 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BAF5E5BC2AE2220400585766 /* FirebaseAuth */; };
+		BAF5E5C32AE2EBA000585766 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF5E5C22AE2EBA000585766 /* Pizza.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BAA6800D2AD5E07D00871443 /* FaheemAyesha-HW5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FaheemAyesha-HW5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA680102AD5E07D00871443 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BAA680122AD5E07D00871443 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BAA680142AD5E07D00871443 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BAA680172AD5E07D00871443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAA6801A2AD5E07D00871443 /* FaheemAyesha_HW5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FaheemAyesha_HW5.xcdatamodel; sourceTree = "<group>"; };
+		BAA6801C2AD5E07F00871443 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAA6801F2AD5E07F00871443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BAA680212AD5E07F00871443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAA680272AD5E0EF00871443 /* pizzaOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pizzaOrderVC.swift; sourceTree = "<group>"; };
+		BAF5E5B72AE218FD00585766 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BAF5E5B92AE2203700585766 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BAF5E5C22AE2EBA000585766 /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAA6800A2AD5E07D00871443 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF5E5BD2AE2220400585766 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAA680042AD5E07D00871443 = {
+			isa = PBXGroup;
+			children = (
+				BAA6800F2AD5E07D00871443 /* FaheemAyesha-HW5 */,
+				BAA6800E2AD5E07D00871443 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAA6800E2AD5E07D00871443 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAA6800D2AD5E07D00871443 /* FaheemAyesha-HW5.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAA6800F2AD5E07D00871443 /* FaheemAyesha-HW5 */ = {
+			isa = PBXGroup;
+			children = (
+				BAA680102AD5E07D00871443 /* AppDelegate.swift */,
+				BAA680122AD5E07D00871443 /* SceneDelegate.swift */,
+				BAA680142AD5E07D00871443 /* ViewController.swift */,
+				BAF5E5B72AE218FD00585766 /* LoginViewController.swift */,
+				BAA680272AD5E0EF00871443 /* pizzaOrderVC.swift */,
+				BAF5E5C22AE2EBA000585766 /* Pizza.swift */,
+				BAA680162AD5E07D00871443 /* Main.storyboard */,
+				BAA6801C2AD5E07F00871443 /* Assets.xcassets */,
+				BAA6801E2AD5E07F00871443 /* LaunchScreen.storyboard */,
+				BAA680212AD5E07F00871443 /* Info.plist */,
+				BAA680192AD5E07D00871443 /* FaheemAyesha_HW5.xcdatamodeld */,
+				BAF5E5B92AE2203700585766 /* GoogleService-Info.plist */,
+			);
+			path = "FaheemAyesha-HW5";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAA6800C2AD5E07D00871443 /* FaheemAyesha-HW5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAA680242AD5E07F00871443 /* Build configuration list for PBXNativeTarget "FaheemAyesha-HW5" */;
+			buildPhases = (
+				BAA680092AD5E07D00871443 /* Sources */,
+				BAA6800A2AD5E07D00871443 /* Frameworks */,
+				BAA6800B2AD5E07D00871443 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FaheemAyesha-HW5";
+			packageProductDependencies = (
+				BAF5E5BC2AE2220400585766 /* FirebaseAuth */,
+			);
+			productName = "FaheemAyesha-HW5";
+			productReference = BAA6800D2AD5E07D00871443 /* FaheemAyesha-HW5.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAA680052AD5E07D00871443 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					BAA6800C2AD5E07D00871443 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = BAA680082AD5E07D00871443 /* Build configuration list for PBXProject "FaheemAyesha-HW5" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAA680042AD5E07D00871443;
+			packageReferences = (
+				BAF5E5BB2AE2220400585766 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = BAA6800E2AD5E07D00871443 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAA6800C2AD5E07D00871443 /* FaheemAyesha-HW5 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAA6800B2AD5E07D00871443 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA680202AD5E07F00871443 /* LaunchScreen.storyboard in Resources */,
+				BAF5E5BA2AE2203700585766 /* GoogleService-Info.plist in Resources */,
+				BAA6801D2AD5E07F00871443 /* Assets.xcassets in Resources */,
+				BAA680182AD5E07D00871443 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAA680092AD5E07D00871443 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF5E5B82AE218FD00585766 /* LoginViewController.swift in Sources */,
+				BAA680282AD5E0EF00871443 /* pizzaOrderVC.swift in Sources */,
+				BAF5E5C32AE2EBA000585766 /* Pizza.swift in Sources */,
+				BAA680152AD5E07D00871443 /* ViewController.swift in Sources */,
+				BAA6801B2AD5E07D00871443 /* FaheemAyesha_HW5.xcdatamodeld in Sources */,
+				BAA680112AD5E07D00871443 /* AppDelegate.swift in Sources */,
+				BAA680132AD5E07D00871443 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BAA680162AD5E07D00871443 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAA680172AD5E07D00871443 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BAA6801E2AD5E07F00871443 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAA6801F2AD5E07F00871443 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAA680222AD5E07F00871443 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BAA680232AD5E07F00871443 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAA680252AD5E07F00871443 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FaheemAyesha-HW5/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AyeshaF.FaheemAyesha-HW5";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAA680262AD5E07F00871443 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FaheemAyesha-HW5/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AyeshaF.FaheemAyesha-HW5";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAA680082AD5E07D00871443 /* Build configuration list for PBXProject "FaheemAyesha-HW5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAA680222AD5E07F00871443 /* Debug */,
+				BAA680232AD5E07F00871443 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAA680242AD5E07F00871443 /* Build configuration list for PBXNativeTarget "FaheemAyesha-HW5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAA680252AD5E07F00871443 /* Debug */,
+				BAA680262AD5E07F00871443 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BAF5E5BB2AE2220400585766 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BAF5E5BC2AE2220400585766 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BAF5E5BB2AE2220400585766 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		BAA680192AD5E07D00871443 /* FaheemAyesha_HW5.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BAA6801A2AD5E07D00871443 /* FaheemAyesha_HW5.xcdatamodel */,
+			);
+			currentVersion = BAA6801A2AD5E07D00871443 /* FaheemAyesha_HW5.xcdatamodel */;
+			path = FaheemAyesha_HW5.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BAA680052AD5E07D00871443 /* Project object */;
+}
